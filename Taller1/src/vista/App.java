@@ -29,4 +29,8 @@ public class App {
 		
 	    return numbers.stream()
 	            .filter(i -> i > 10)
+	            .count();
+	}
+	
 }
+
