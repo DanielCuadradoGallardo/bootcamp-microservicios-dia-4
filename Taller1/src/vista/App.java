@@ -19,7 +19,7 @@ public class App {
 		
 		for(Integer i : numbers) {
 			if(i > 10) {
-				count += i;
+				count++;
 			}
 		}
 		return (count);
@@ -29,8 +29,7 @@ public class App {
 		
 	    return numbers.stream()
 	            .filter(i -> i > 10)
-	            .mapToInt(Integer::intValue)
-	            .sum();
+	            .count();
 	}
 	
 
