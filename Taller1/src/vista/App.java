@@ -19,18 +19,14 @@ public class App {
 		
 		for(Integer i : numbers) {
 			if(i > 10) {
-				count++;
+				count ++;
 			}
 		}
 		return (count);
 	}
 	
-	private static int cuentaFuncional(List<Integer> numbers) {
+	private static long cuentaFuncional(List<Integer> numbers) {
 		
 	    return numbers.stream()
 	            .filter(i -> i > 10)
-	            .count();
-	}
-	
-
 }
